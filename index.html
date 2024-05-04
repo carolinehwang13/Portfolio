@@ -2,12 +2,40 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Redeisgn</title>
+    <title>Caroline Hwang</title>
     <!-- import CSS styles -->
     <link rel="stylesheet" href="styles.css" />
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
   </head>
 
   <!-- page content goes into <body> -->
   <body>
+    <div id="header">
+        <button id="home-button" onclick="location.href='index.html'" type="button">Caroline Hwang</button>
+        <div id="header-buttons">
+            <button class="header-button" onclick="location.href='projects.html'" type="button">work</button>
+            <button class="header-button" onclick="location.href='about.html'" type="button">about</button>
+            <button class="header-button">resume</button>
+        </div>
+    </div>
+    <div id="intro">
+        <div id="intro-text">
+            <h1>Welcome! <br>I'm Caroline Hwang :)</h1>
+            <p>hiiiiiii intro stuff here</p>
+        </div>
+        <img id="home-pic" src="./assets/home_pic.png" alt="Picture of Caroline" aria-label="Caroline" />
+    </div>
+    <div id="projects" class="home-section">
+        <h2>Check out my projects!</h2>
+        <div id="project-buttons">
+            <button id="proj-1-button"class="project-button">project 1</button>
+            <button id="proj-2-button"class="project-button">project 2</button>
+            <button id="proj-3-button"class="project-button">project 3</button>
+        </div>
+    </div>
+    <div class="home-section" id="contact-info">
+        <h2>Thank you for visiting!</h2>
+        <p>Email: caroline_hwang@brown.edu <br> LinkedIn: https://www.linkedin.com/in/caroline-hwang-b187a422b/</p>
+    </div>
   </body>
 </html>
