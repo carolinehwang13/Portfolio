@@ -5,7 +5,9 @@
     <title>Caroline Hwang</title>
     <!-- import CSS styles -->
     <link rel="stylesheet" href="styles.css" />
-    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
   </head>
 
   <!-- page content goes into <body> -->
@@ -13,11 +15,15 @@
     <div id="header">
         <button id="home-button" onclick="location.href='index.html'" type="button">Caroline Hwang</button>
         <div id="header-buttons">
-            <button class="header-button" onclick="location.href='projects.html'" type="button">work</button>
-            <button class="header-button" onclick="location.href='about.html'" type="button">about</button>
-            <button class="header-button">resume</button>
+            <button class="curr-header-button" onclick="location.href='projects.html'" type="button">work</button>
+            <button class="header-button" onclick="location.href='about.html'" type="button" font-size: >about</button>
+            <button class="header-button" target="_blank" onclick="location.href='./assets/resume.pdf'" type="a">resume</button>
         </div>
     </div>
-    <h1>Projects</h1>
+    <div id="projects-page">
+        <button class="project-page-button" onclick="location.href='./case-studies/iterative-design.html'">Partiful Settings Redesign</button>
+        <button class="project-page-button" onclick="location.href='./case-studies/responsive-redesign.html'">Norby's Cafe Responsive Redesign</button>
+        <button class="project-page-button" onclick="location.href='./case-studies/folio.html'">The Making of This Portfolio</button>
+    </div>
   </body>
 </html>

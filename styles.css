@@ -3,37 +3,45 @@ body {
     flex-direction: column;
     margin: 0px;
     overflow-y: scroll;
+    /* overflow-y: clip; */
+    padding-bottom: 30px;
+    top: 100px;
 }
 
 h1{
     font-family: "Nunito";
-    font-size: 44px;
-    font-weight: bolder;
+    font-size: 45px;
+    font-weight: 700;
 }
 
 h2{
     font-family: "Nunito";
     font-size: 32px;
-    font-weight: bold;
+    font-weight: 650;
 }
 p{
     font-family: "Nunito";
     font-size: 20px;
+    font-weight: 300;
 }
 
 #header {
+    position:fixed;
+    background-color: white;
+    width: 97%;
     display: flex;
     justify-content: space-between;
-    margin-left: 30px;
-    margin-right: 30px;
     align-items: center;
     height: 90px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-top: 0px;
 }
 
 #home-button{
     font-family: "Nunito";
     font-size: 32px;
-    font-weight: bold;
+    /* font-weight: bold; */
     background-color: white;
     border: none;
 }
@@ -57,6 +65,19 @@ p{
     text-decoration: underline;
 }
 
+.curr-header-button{
+    font-family: "Nunito";
+    font-size: 18px;
+    text-decoration: underline;
+    background-color: white;
+    border: none;
+}
+
+.curr-header-button:hover{
+    font-weight: bolder;
+    font-size: 22px;
+}
+
 #intro{
     background-color: #D1EBEE;
     height: 60vh;
@@ -64,6 +85,11 @@ p{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 90px;
+}
+
+#intro-text{
+    width: 30%;
 }
 
 #home-pic{
@@ -88,3 +114,168 @@ p{
     width: 30%;
     height: 200px;
 }
+
+.link{
+    font-family: "Nunito";
+    font-size: 20px;
+}
+
+#about-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#about-pics{
+    width: 40%
+}
+
+#about-pic{
+    width: 100%;
+}
+
+#about-page{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 90px;
+}
+
+#projects-page{
+    background-color: #D1EBEE;
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+    align-content:flex-start;
+    justify-content: center;
+    row-gap: 30px;
+    column-gap: 30px;
+    margin-top: 90px;
+}
+
+.project-page-button{
+    background-color: white;
+    font-family: "Nunito";
+    font-size: 20px;
+    width: 40%;
+    height: 360px;  
+    margin: 30px;
+    border: none;
+}
+
+.project-page-button:hover{
+    border:2px solid black;
+}
+
+.project-header{
+    background-color: #D7D6FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    margin-top: 90px;
+}
+
+#norbys-header{
+    background-color: #FAD2E1;
+}
+
+#folio-header{
+    background-color: #C0EACD;
+}
+
+.case-study{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px;
+}
+
+.proj-overview{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.navigator{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    position: fixed;
+    /* position: sticky; */
+    /* top: 20px; */
+}
+
+.navigator-link{
+    font-family: "Nunito";
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    top: 100px;
+}
+
+.project-body{
+    width: 70vw;
+    margin-left: 23vw;
+}
+
+.image-group{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    flex-direction: row;
+}
+
+.norbys-image{
+    width: 40%;
+}
+
+.norbys-image2{
+    width: 100%
+}
+
+table, tr, td{
+    font-family: "Nunito";
+    border: 1px solid black;
+    border-collapse: collapse;
+    vertical-align:top;
+}
+
+.image-caption{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 30%;
+    row-gap: 10px;
+}
+
+.anchor{
+   display:block;
+   height:63px; /* this is the height of your header */
+   margin-top:-90px; /* this is again negative value of the height of your header */
+   visibility:hidden;
+}
+
+#norby-menu-img{
+    width: 30%;
+    height: 90%;
+}
+
+#norby-phone{
+    height: 60%;
+    width: 50%;
+    flex-direction: row;
+}
+
+.partiful-image{
+    width: 20%;
+    height: 40%;
+}
+
+
+
