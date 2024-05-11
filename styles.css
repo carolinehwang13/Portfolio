@@ -121,11 +121,38 @@ p{
     background-color: white;
     width: 30%;
     height: 200px;
+    border: none;
+    font: "Nunito";
+    font-size: 24px;
+    font-weight: 600;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: white;
+}
+
+.project-button:hover{
+    border: 1px solid black;
 }
 
 .link{
     font-family: "Nunito";
     font-size: 20px;
+}
+
+#proj-1-button {
+    background-image: url("./assets/partiful-button.jpeg"); 
+    background-size: cover;
+}
+
+#proj-2-button {
+    background-image: url("./assets/norbys-button.jpeg");
+    background-size: cover;
+    color: white;
+    -webkit-text-stroke-color: black;
+}
+
+#proj-3-button {
+    background-image: url("./assets/folio-button2.jpg");
+    background-size: cover;
 }
 
 #about-info{
@@ -135,11 +162,16 @@ p{
 }
 
 #about-pics{
-    width: 40%
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+
 }
 
-#about-pic{
-    width: 100%;
+.about-pic{
+    width: 40%;
 }
 
 #about-page{
@@ -167,11 +199,14 @@ p{
 .project-page-button{
     background-color: white;
     font-family: "Nunito";
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: 700;
     width: 40%;
     height: 360px;  
     margin: 30px;
     border: none;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
 }
 
 .project-page-button:hover{
